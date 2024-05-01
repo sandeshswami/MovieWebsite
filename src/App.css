@@ -1,0 +1,96 @@
+.li-decoration {
+  list-style: none;
+}
+header {
+  background-color: rgb(27, 27, 27);
+}
+input:focus {
+  outline: none;
+}
+.poster-img {
+  height: 100%;
+  width: 100%;
+}
+.posterCard {
+  height: 20rem !important;
+  background-color: rgb(49, 47, 47) !important;
+  color: white !important;
+}
+.card-body {
+  padding: 8px 8px 8px !important;
+}
+a {
+  color: white !important;
+}
+li > a:hover {
+  color: #d43f52 !important;
+}
+.movieDetailBG {
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #000000b3;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.bottomCard {
+  background-color: #d43f52;
+  height: max-content;
+  padding: 5px;
+  display: none;
+  bottom: inherit;
+}
+.posterCard:hover .bottomCard {
+  bottom: 0;
+  z-index: 1;
+  display: inherit;
+}
+.SearchBtn {
+  background-color: #d43f52;
+}
+.ant-pagination-options {
+  display: none !important;
+}
+.ant-pagination-item-link {
+  color: white !important;
+}
+.ant-pagination-item-active > a {
+  color: blueviolet !important;
+}
+.ant-pagination-item > a:hover {
+  color: white !important;
+}
+.ant-pagination-item-ellipsis {
+  color: white !important;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #ffa516);
+  mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .bottomCard {
+    bottom: 0;
+    z-index: 1;
+    display: inherit;
+  }
+}
